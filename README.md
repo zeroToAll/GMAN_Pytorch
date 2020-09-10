@@ -3,7 +3,7 @@
 
 ## 论文的主要内容
 
-文章以交通数据为研究对象。考虑了各个监测点之间的关系。实现了监测点的时空特征和监测的序列特征的融合。提供了一种全新的看待数据的视角。通常对序列数据建模，例如NLP。看待数据的方式是![1](http://latex.codecogs.com/svg.latex?X_i \in R^{ time\_step \times e\_dim})。文章把监测点都放在同一个样本上，所以单个样本的维度变成了$X_i \in R^{N\times time\_step \times e\_dim}$。然后用Attention分别提取时间特征和空间特征。时间维度的Attention matrix大小为$R^{N\times time\_step \times time\_step}$。空间维度的Attention matrix大小为$R^{time\_step\times N \times N}$。
+文章以交通数据为研究对象。考虑了各个监测点之间的关系。实现了监测点的时空特征和监测的序列特征的融合。提供了一种全新的看待数据的视角。通常对序列数据建模，例如NLP。看待数据的方式是$X_i \in R^{ time\_step \times e\_dim}$。文章把监测点都放在同一个样本上，所以单个样本的维度变成了$X_i \in R^{N\times time\_step \times e\_dim}$。然后用Attention分别提取时间特征和空间特征。时间维度的Attention matrix大小为$R^{N\times time\_step \times time\_step}$。空间维度的Attention matrix大小为$R^{time\_step\times N \times N}$。
 
 ## 优点和不足
 
